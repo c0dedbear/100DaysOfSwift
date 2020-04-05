@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DBFC7384A95DBD195D6ED3F848E3E1 /* UIBezierPath+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74967BAAB7733190D752C26F7C5C09F4 /* UIBezierPath+SVG.swift */; };
+		0579DB182A9DF9334D6F85BFFE5E2C7B /* SVGElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8D11F9889D1643012A2AE9689673B /* SVGElement.swift */; };
+		06AF08EE94A52FBEC4B23FC8F7E46B50 /* SVGRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998A032C53E5AE50D891A09EF89C0533 /* SVGRectangle.swift */; };
+		0829D39A7891D0CD419F5B0FA945D78B /* SVGRootElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32694346ADDB20B447AD3F090504FCD /* SVGRootElement.swift */; };
+		137B0B5E63202FE2E9FAD9C3FAA2ADA6 /* Fillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897788E9F6EB0DF657F26414D0ECF5EF /* Fillable.swift */; };
+		1AC00B5C1555BDC7A5B0690BBE29769E /* PathDLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F523E10CD1ED100A67EFBAF9666FA /* PathDLexer.swift */; };
+		1BA68E00C3BA704B0ED72BAF9CD1CFE1 /* FloatingPoint+DegreesRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA6E14396F38E025B26EF7591DEEDD /* FloatingPoint+DegreesRadians.swift */; };
+		1F5FAACE87B623C44153DD09A822E1B3 /* ParsesAsynchronously.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD2169B7DD51FA18AE5709A2C19BEC /* ParsesAsynchronously.swift */; };
+		2030DCBC8447E22A3EB4F310B2D8B078 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782969B5B504684F3F2E786C2096210 /* UIColor+Extensions.swift */; };
+		20E0BE472F06CDD82AA660C4C0B190E3 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9D780EDB96AB733B1B0CBB6C448ED /* String+Trim.swift */; };
+		290FDD6000DBBC635016326F9711F111 /* PathCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFEC81D18553846BC0BEAE6116F400 /* PathCommand.swift */; };
+		2B3221296319AB33BFB4C756AE5F4D72 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62E00CE302ECCB7EC9F2DB08BF26DA /* SVGParser.swift */; };
+		2B51BABACCA8BB003BF832C7199ACB3C /* SVGCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DEB8483B3FB04AF2C97A8F7A73F0D /* SVGCache.swift */; };
+		34FB97622838BAF70DF4F754183CE03E /* CALayer+Sublayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061CD338DB0AD391CF54C184E06AB5C /* CALayer+Sublayers.swift */; };
+		35DF6382CADD2A0BE2BA216DC3AC709C /* UIView+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A91A384182AB71B6C2A006D5EC3553 /* UIView+SVG.swift */; };
+		3736DEB3E4538D9F8FA950AD17AA80A1 /* SVGPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41510B99BAA223000E258C0659D78A7 /* SVGPolyline.swift */; };
+		37C6321FB48624A55C2750261039A1E6 /* Unown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41E418C52FCB1C30A12A2E17D351DB /* Unown.swift */; };
+		399FADF0A86557CDFB3B8CA527BCD0F0 /* SVGGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE22621E78006FD9A885775F640F0AE /* SVGGroup.swift */; };
+		3DA15AAAD6381241F577F86F3E42F36C /* CAShapeLayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315B91D7CBDDC203DC08A6038FB1C8D /* CAShapeLayer+SVG.swift */; };
+		4C075371146A8E2EBBCD691A7B639B07 /* SVGPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0963ABE385121453D4A9428E9F00C9ED /* SVGPolygon.swift */; };
+		63DC9E0B2F3C2FA86FF7B77E51779A8C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D350C984F0131E238F55059DF45F347 /* Identifiable.swift */; };
+		68A7B43659E26DD5163D0A456EC60160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6D23C152B6445C4508F6FF8FB352F4DC /* SVGLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA659D1B09F71FF86626852B9D2BEF2A /* SVGLayer.swift */; };
+		6E636388E18A816493343C46C98E5057 /* SwiftSVG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC411EB45DC180B1AFFBEE10823B9 /* SwiftSVG-dummy.m */; };
+		712DD65FE85BCC1B3485EE683FFB6C98 /* DelaysApplyingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548CD6CF8DB0DBBC73A9A062CDCAF15 /* DelaysApplyingAttributes.swift */; };
+		7743B437A7C29FE6821E3A4C9FA45577 /* CoordinateLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2E2D64B6BC33EF879904DBFDE89AF7 /* CoordinateLexer.swift */; };
+		95FCA1C4E626F70924D111DA2609D2D1 /* NSBezierPath+CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE13E573151EC122D32FB9FA413D834C /* NSBezierPath+CrossPlatform.swift */; };
+		9707A3D6C72179DF7BE18A4EE3C88F4E /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299C7670236D80F5EB36FB15416E8569 /* SVGView.swift */; };
+		98B1981D77B2DC0B50356EAC116CFF94 /* SwiftSVG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF3A4BBD95FA56AD4B1EEC1DC3E90ED /* SwiftSVG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99EF0E3EC03BCFC297DF399105502FDB /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EC680548CE03CFCDA1EB0A0703471 /* Stylable.swift */; };
+		9A0E47682B59A3B119C23F4EFA6E271F /* Scalar+FromByteArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D46D1713704CC79F0BB3703322B0ED /* Scalar+FromByteArray.swift */; };
+		9A9D956F06ED090E30A48ACF6A8E65C4 /* SVGCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FEF5B28122E8E4712EC4D21ABFA85C /* SVGCircle.swift */; };
+		9D967308ACAC7A1083969A17DA370F66 /* SVGShapeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1087CB9AE921CC3D38DDE8CFA800810 /* SVGShapeElement.swift */; };
+		9F921920FB175513318B46694CDD1FD8 /* Pods-Countries-Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E136644EDE61AD951F150DF3AF847B1 /* Pods-Countries-Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2B9ED2191B47DE2B3D5F357B14D838F /* CALayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAAEB4C534C4A6A6392B0176D1752C6 /* CALayer+SVG.swift */; };
+		A3FE64F1CDE83839169A8497E2BBA303 /* NSXMLSVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597A30F9E9FF53EADF8C607A178B4A59 /* NSXMLSVGParser.swift */; };
+		A6577E273761F4946B31D6FF92D78A40 /* SVGParserSupportedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC05B08A3D71CAC5BA1EC2519D8FCFE1 /* SVGParserSupportedElements.swift */; };
+		A9E8F15FD1CF5ED960B637D688A63DDA /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822331D71B62C1ABE44158D6668DFC52 /* Stack.swift */; };
+		AC07823B941A20C4922DE7C88F3570DE /* SVGContainerElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F597D10170563650C0D3887288AB0E /* SVGContainerElement.swift */; };
+		B39A41176B2C116EE0CB92236F9E834E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B3A384A0CD6468AE2808DB582F3EAC2E /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D37256786DDC61025249686C51908E /* CrossPlatform.swift */; };
+		BB6CDBCD56FE7AD6B053C4A572B79F39 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04B3F7D5C7F2DCC764A782F6D01DFC /* Dictionary+JSON.swift */; };
+		BC78D21F69A5B1670EA837C0A5F6390D /* BinaryFloatingPoint+ParseLengthString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550FA21DD9F9BE04BD7923DBB3E0A95 /* BinaryFloatingPoint+ParseLengthString.swift */; };
+		BD5AEAE5C754E31177ACF6CE6BF56E96 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD485C77A99FA027EB11063EEC02C /* String+Subscript.swift */; };
+		BD61DD79F86B26BD7DCC9A19C151476F /* SVGEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7FF94D2C5CD515DA41D920E6BA1086 /* SVGEllipse.swift */; };
+		CA117284A892BF33550EC5C9563CB41B /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374FAA61F94F7DCDE749166B07FDA92 /* SVGPath.swift */; };
+		CABAA0C201E696E00A454362AB27F4CD /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7706408443B741F718112A512A945 /* Transformable.swift */; };
+		D3B55EC0016ABBC02EB9376CFAFC7B41 /* SVGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F518D178C2836F55D82EEC179CF55 /* SVGLine.swift */; };
+		DDD4CA2FFDDF823AB07EFA74F2504040 /* Pods-Countries-Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C88552C07DDCAC1749632CD097B99D /* Pods-Countries-Challenge-dummy.m */; };
+		DFBADB5CC4932142422002F20F5A8AAA /* Data+CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCF261888EDBBD2F382911A4EA0D72 /* Data+CacheKey.swift */; };
+		EAEC62731E421E8C8BE928032193B9EB /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA24D9F24836AE8500CCA8196464FC1 /* Print.swift */; };
+		F05946185B7A37653C0BA3149687EDB3 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C32DEFE8F8597CFD497D45E3BC44F8 /* DispatchQueue+Extensions.swift */; };
+		F0C0274D3FB9D20A4232B5BE8DAE532F /* Strokable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D508F6C18C0B087078EF383684C95F /* Strokable.swift */; };
+		FF274B739B932D5475DCBE355567F21E /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14048341CCAE80E49B444C96CDBCCE /* Dictionary+Add.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C4A4B194873D7CC78595BA8704EBD1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2349E173F60A2065FC65E52DD215DFF0;
+			remoteInfo = SwiftSVG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C88552C07DDCAC1749632CD097B99D /* Pods-Countries-Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Countries-Challenge-dummy.m"; sourceTree = "<group>"; };
+		091DEB8483B3FB04AF2C97A8F7A73F0D /* SVGCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCache.swift; path = SwiftSVG/SVG/Cache/SVGCache.swift; sourceTree = "<group>"; };
+		0963ABE385121453D4A9428E9F00C9ED /* SVGPolygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGPolygon.swift; path = SwiftSVG/SVG/Elements/SVGPolygon.swift; sourceTree = "<group>"; };
+		0BAFEC81D18553846BC0BEAE6116F400 /* PathCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathCommand.swift; path = SwiftSVG/SVG/Iterators/PathCommand.swift; sourceTree = "<group>"; };
+		11CCF261888EDBBD2F382911A4EA0D72 /* Data+CacheKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+CacheKey.swift"; path = "SwiftSVG/SVG/Helpers/Data+CacheKey.swift"; sourceTree = "<group>"; };
+		14B7706408443B741F718112A512A945 /* Transformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformable.swift; path = SwiftSVG/SVG/Attributes/Transformable.swift; sourceTree = "<group>"; };
+		14BCC411EB45DC180B1AFFBEE10823B9 /* SwiftSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSVG-dummy.m"; sourceTree = "<group>"; };
+		16C32DEFE8F8597CFD497D45E3BC44F8 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "SwiftSVG/SVG/Helpers/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		2548CD6CF8DB0DBBC73A9A062CDCAF15 /* DelaysApplyingAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelaysApplyingAttributes.swift; path = SwiftSVG/SVG/Attributes/DelaysApplyingAttributes.swift; sourceTree = "<group>"; };
+		299C7670236D80F5EB36FB15416E8569 /* SVGView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGView.swift; path = "SwiftSVG/SVG Extensions/SVGView.swift"; sourceTree = "<group>"; };
+		2AAAEB4C534C4A6A6392B0176D1752C6 /* CALayer+SVG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+SVG.swift"; path = "SwiftSVG/SVG Extensions/CALayer+SVG.swift"; sourceTree = "<group>"; };
+		2AE22621E78006FD9A885775F640F0AE /* SVGGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGGroup.swift; path = SwiftSVG/SVG/Elements/SVGGroup.swift; sourceTree = "<group>"; };
+		2C14048341CCAE80E49B444C96CDBCCE /* Dictionary+Add.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Add.swift"; path = "SwiftSVG/SVG/Helpers/Dictionary+Add.swift"; sourceTree = "<group>"; };
+		2D350C984F0131E238F55059DF45F347 /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = SwiftSVG/SVG/Attributes/Identifiable.swift; sourceTree = "<group>"; };
+		30D37256786DDC61025249686C51908E /* CrossPlatform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossPlatform.swift; path = SwiftSVG/CrossPlatform.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32FD2169B7DD51FA18AE5709A2C19BEC /* ParsesAsynchronously.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsesAsynchronously.swift; path = SwiftSVG/SVG/Elements/ParsesAsynchronously.swift; sourceTree = "<group>"; };
+		3B424E4CCFA11BC7688115446B9AE5D1 /* Pods-Countries-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		407C9C8A3BC12A19F1BC91A06F17A99B /* Pods-Countries-Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Countries-Challenge.modulemap"; sourceTree = "<group>"; };
+		40A660EE1A1693167BC45B4927F4DCF0 /* Pods-Countries-Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Countries-Challenge-frameworks.sh"; sourceTree = "<group>"; };
+		4541A7D5C3398672230FC285596001C2 /* SwiftSVG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSVG.xcconfig; sourceTree = "<group>"; };
+		4550FA21DD9F9BE04BD7923DBB3E0A95 /* BinaryFloatingPoint+ParseLengthString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BinaryFloatingPoint+ParseLengthString.swift"; path = "SwiftSVG/SVG/Helpers/BinaryFloatingPoint+ParseLengthString.swift"; sourceTree = "<group>"; };
+		486F523E10CD1ED100A67EFBAF9666FA /* PathDLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathDLexer.swift; path = SwiftSVG/SVG/Iterators/PathDLexer.swift; sourceTree = "<group>"; };
+		4C210697CEDA06CC01239D0BD0F8AAC0 /* SwiftSVG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSVG.modulemap; sourceTree = "<group>"; };
+		4FB8D11F9889D1643012A2AE9689673B /* SVGElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGElement.swift; path = SwiftSVG/SVG/Elements/SVGElement.swift; sourceTree = "<group>"; };
+		5782969B5B504684F3F2E786C2096210 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "SwiftSVG/SVG/Helpers/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		597A30F9E9FF53EADF8C607A178B4A59 /* NSXMLSVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSXMLSVGParser.swift; path = SwiftSVG/SVG/Parser/NSXMLSVGParser.swift; sourceTree = "<group>"; };
+		5E136644EDE61AD951F150DF3AF847B1 /* Pods-Countries-Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Countries-Challenge-umbrella.h"; sourceTree = "<group>"; };
+		5F277B583E6CE26CFC4B16417029FB27 /* Pods_Countries_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Countries_Challenge.framework; path = "Pods-Countries-Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSVG.framework; path = SwiftSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A91A384182AB71B6C2A006D5EC3553 /* UIView+SVG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SVG.swift"; path = "SwiftSVG/SVG Extensions/UIView+SVG.swift"; sourceTree = "<group>"; };
+		716FDCC7458C9553F7B83E00BEC296D0 /* SwiftSVG-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSVG-Info.plist"; sourceTree = "<group>"; };
+		72FEF5B28122E8E4712EC4D21ABFA85C /* SVGCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCircle.swift; path = SwiftSVG/SVG/Elements/SVGCircle.swift; sourceTree = "<group>"; };
+		746F518D178C2836F55D82EEC179CF55 /* SVGLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGLine.swift; path = SwiftSVG/SVG/Elements/SVGLine.swift; sourceTree = "<group>"; };
+		74967BAAB7733190D752C26F7C5C09F4 /* UIBezierPath+SVG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+SVG.swift"; path = "SwiftSVG/SVG Extensions/UIBezierPath+SVG.swift"; sourceTree = "<group>"; };
+		7E04B3F7D5C7F2DCC764A782F6D01DFC /* Dictionary+JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+JSON.swift"; path = "SwiftSVG/SVG/Helpers/Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		7FF3A4BBD95FA56AD4B1EEC1DC3E90ED /* SwiftSVG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSVG-umbrella.h"; sourceTree = "<group>"; };
+		822331D71B62C1ABE44158D6668DFC52 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = SwiftSVG/SVG/Helpers/Stack.swift; sourceTree = "<group>"; };
+		897788E9F6EB0DF657F26414D0ECF5EF /* Fillable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fillable.swift; path = SwiftSVG/SVG/Attributes/Fillable.swift; sourceTree = "<group>"; };
+		8FE9D780EDB96AB733B1B0CBB6C448ED /* String+Trim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Trim.swift"; path = "SwiftSVG/SVG/Helpers/String+Trim.swift"; sourceTree = "<group>"; };
+		943B772C9FBE43C6B746A68D762D0920 /* Pods-Countries-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Countries-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		95F597D10170563650C0D3887288AB0E /* SVGContainerElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGContainerElement.swift; path = SwiftSVG/SVG/Elements/SVGContainerElement.swift; sourceTree = "<group>"; };
+		998A032C53E5AE50D891A09EF89C0533 /* SVGRectangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGRectangle.swift; path = SwiftSVG/SVG/Elements/SVGRectangle.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DCA80CD8A49FF8C731C5A9E4824F7BD /* Pods-Countries-Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Countries-Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A315B91D7CBDDC203DC08A6038FB1C8D /* CAShapeLayer+SVG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+SVG.swift"; path = "SwiftSVG/SVG Extensions/CAShapeLayer+SVG.swift"; sourceTree = "<group>"; };
+		A8E833DAC9500CA98BE280F591874FB3 /* SwiftSVG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSVG-prefix.pch"; sourceTree = "<group>"; };
+		AF2E2D64B6BC33EF879904DBFDE89AF7 /* CoordinateLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinateLexer.swift; path = SwiftSVG/SVG/Iterators/CoordinateLexer.swift; sourceTree = "<group>"; };
+		AFFA6E14396F38E025B26EF7591DEEDD /* FloatingPoint+DegreesRadians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+DegreesRadians.swift"; path = "SwiftSVG/SVG/Helpers/FloatingPoint+DegreesRadians.swift"; sourceTree = "<group>"; };
+		B2D46D1713704CC79F0BB3703322B0ED /* Scalar+FromByteArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Scalar+FromByteArray.swift"; path = "SwiftSVG/SVG/Helpers/Scalar+FromByteArray.swift"; sourceTree = "<group>"; };
+		B32694346ADDB20B447AD3F090504FCD /* SVGRootElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGRootElement.swift; path = SwiftSVG/SVG/Elements/SVGRootElement.swift; sourceTree = "<group>"; };
+		B5659DD9DF397C89378B5DAA5A5E153A /* Pods-Countries-Challenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-Challenge-Info.plist"; sourceTree = "<group>"; };
+		BE7FF94D2C5CD515DA41D920E6BA1086 /* SVGEllipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGEllipse.swift; path = SwiftSVG/SVG/Elements/SVGEllipse.swift; sourceTree = "<group>"; };
+		C1087CB9AE921CC3D38DDE8CFA800810 /* SVGShapeElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGShapeElement.swift; path = SwiftSVG/SVG/Elements/SVGShapeElement.swift; sourceTree = "<group>"; };
+		C16EC680548CE03CFCDA1EB0A0703471 /* Stylable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stylable.swift; path = SwiftSVG/SVG/Attributes/Stylable.swift; sourceTree = "<group>"; };
+		C41510B99BAA223000E258C0659D78A7 /* SVGPolyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGPolyline.swift; path = SwiftSVG/SVG/Elements/SVGPolyline.swift; sourceTree = "<group>"; };
+		CC05B08A3D71CAC5BA1EC2519D8FCFE1 /* SVGParserSupportedElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserSupportedElements.swift; path = SwiftSVG/SVG/Parser/SVGParserSupportedElements.swift; sourceTree = "<group>"; };
+		CFDBD485C77A99FA027EB11063EEC02C /* String+Subscript.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Subscript.swift"; path = "SwiftSVG/SVG/Helpers/String+Subscript.swift"; sourceTree = "<group>"; };
+		D061CD338DB0AD391CF54C184E06AB5C /* CALayer+Sublayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Sublayers.swift"; path = "SwiftSVG/SVG/Helpers/CALayer+Sublayers.swift"; sourceTree = "<group>"; };
+		D3D508F6C18C0B087078EF383684C95F /* Strokable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Strokable.swift; path = SwiftSVG/SVG/Attributes/Strokable.swift; sourceTree = "<group>"; };
+		D8C08D4F0884E3AE78B63BBCB1CDF970 /* Pods-Countries-Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Countries-Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA659D1B09F71FF86626852B9D2BEF2A /* SVGLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGLayer.swift; path = "SwiftSVG/SVG Extensions/SVGLayer.swift"; sourceTree = "<group>"; };
+		E374FAA61F94F7DCDE749166B07FDA92 /* SVGPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGPath.swift; path = SwiftSVG/SVG/Elements/SVGPath.swift; sourceTree = "<group>"; };
+		EB62E00CE302ECCB7EC9F2DB08BF26DA /* SVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParser.swift; path = SwiftSVG/SVG/Parser/SVGParser.swift; sourceTree = "<group>"; };
+		FCA24D9F24836AE8500CCA8196464FC1 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = SwiftSVG/SVG/Helpers/Print.swift; sourceTree = "<group>"; };
+		FE13E573151EC122D32FB9FA413D834C /* NSBezierPath+CrossPlatform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBezierPath+CrossPlatform.swift"; path = "SwiftSVG/NSBezierPath+CrossPlatform.swift"; sourceTree = "<group>"; };
+		FE41E418C52FCB1C30A12A2E17D351DB /* Unown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unown.swift; path = SwiftSVG/SVG/Helpers/Unown.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		398646DBC8333B9C5A1F18AB61836A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A41176B2C116EE0CB92236F9E834E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC95CF555D919E7927C0676C16D6EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A7B43659E26DD5163D0A456EC60160 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A1F8F88DFBD50F16A74B7FF571C552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F277B583E6CE26CFC4B16417029FB27 /* Pods_Countries_Challenge.framework */,
+				62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552EDC54E0CD671CE09EBE8E2A8D10F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				585C6C833AB49113BC4B1D3435108A63 /* Pods-Countries-Challenge */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		585C6C833AB49113BC4B1D3435108A63 /* Pods-Countries-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				407C9C8A3BC12A19F1BC91A06F17A99B /* Pods-Countries-Challenge.modulemap */,
+				9DCA80CD8A49FF8C731C5A9E4824F7BD /* Pods-Countries-Challenge-acknowledgements.markdown */,
+				D8C08D4F0884E3AE78B63BBCB1CDF970 /* Pods-Countries-Challenge-acknowledgements.plist */,
+				04C88552C07DDCAC1749632CD097B99D /* Pods-Countries-Challenge-dummy.m */,
+				40A660EE1A1693167BC45B4927F4DCF0 /* Pods-Countries-Challenge-frameworks.sh */,
+				B5659DD9DF397C89378B5DAA5A5E153A /* Pods-Countries-Challenge-Info.plist */,
+				5E136644EDE61AD951F150DF3AF847B1 /* Pods-Countries-Challenge-umbrella.h */,
+				3B424E4CCFA11BC7688115446B9AE5D1 /* Pods-Countries-Challenge.debug.xcconfig */,
+				943B772C9FBE43C6B746A68D762D0920 /* Pods-Countries-Challenge.release.xcconfig */,
+			);
+			name = "Pods-Countries-Challenge";
+			path = "Target Support Files/Pods-Countries-Challenge";
+			sourceTree = "<group>";
+		};
+		74337EEE5094C9C2EBCCEBC8FBA7C333 /* SwiftSVG */ = {
+			isa = PBXGroup;
+			children = (
+				4550FA21DD9F9BE04BD7923DBB3E0A95 /* BinaryFloatingPoint+ParseLengthString.swift */,
+				D061CD338DB0AD391CF54C184E06AB5C /* CALayer+Sublayers.swift */,
+				2AAAEB4C534C4A6A6392B0176D1752C6 /* CALayer+SVG.swift */,
+				A315B91D7CBDDC203DC08A6038FB1C8D /* CAShapeLayer+SVG.swift */,
+				AF2E2D64B6BC33EF879904DBFDE89AF7 /* CoordinateLexer.swift */,
+				30D37256786DDC61025249686C51908E /* CrossPlatform.swift */,
+				11CCF261888EDBBD2F382911A4EA0D72 /* Data+CacheKey.swift */,
+				2548CD6CF8DB0DBBC73A9A062CDCAF15 /* DelaysApplyingAttributes.swift */,
+				2C14048341CCAE80E49B444C96CDBCCE /* Dictionary+Add.swift */,
+				7E04B3F7D5C7F2DCC764A782F6D01DFC /* Dictionary+JSON.swift */,
+				16C32DEFE8F8597CFD497D45E3BC44F8 /* DispatchQueue+Extensions.swift */,
+				897788E9F6EB0DF657F26414D0ECF5EF /* Fillable.swift */,
+				AFFA6E14396F38E025B26EF7591DEEDD /* FloatingPoint+DegreesRadians.swift */,
+				2D350C984F0131E238F55059DF45F347 /* Identifiable.swift */,
+				FE13E573151EC122D32FB9FA413D834C /* NSBezierPath+CrossPlatform.swift */,
+				597A30F9E9FF53EADF8C607A178B4A59 /* NSXMLSVGParser.swift */,
+				32FD2169B7DD51FA18AE5709A2C19BEC /* ParsesAsynchronously.swift */,
+				0BAFEC81D18553846BC0BEAE6116F400 /* PathCommand.swift */,
+				486F523E10CD1ED100A67EFBAF9666FA /* PathDLexer.swift */,
+				FCA24D9F24836AE8500CCA8196464FC1 /* Print.swift */,
+				B2D46D1713704CC79F0BB3703322B0ED /* Scalar+FromByteArray.swift */,
+				822331D71B62C1ABE44158D6668DFC52 /* Stack.swift */,
+				CFDBD485C77A99FA027EB11063EEC02C /* String+Subscript.swift */,
+				8FE9D780EDB96AB733B1B0CBB6C448ED /* String+Trim.swift */,
+				D3D508F6C18C0B087078EF383684C95F /* Strokable.swift */,
+				C16EC680548CE03CFCDA1EB0A0703471 /* Stylable.swift */,
+				091DEB8483B3FB04AF2C97A8F7A73F0D /* SVGCache.swift */,
+				72FEF5B28122E8E4712EC4D21ABFA85C /* SVGCircle.swift */,
+				95F597D10170563650C0D3887288AB0E /* SVGContainerElement.swift */,
+				4FB8D11F9889D1643012A2AE9689673B /* SVGElement.swift */,
+				BE7FF94D2C5CD515DA41D920E6BA1086 /* SVGEllipse.swift */,
+				2AE22621E78006FD9A885775F640F0AE /* SVGGroup.swift */,
+				DA659D1B09F71FF86626852B9D2BEF2A /* SVGLayer.swift */,
+				746F518D178C2836F55D82EEC179CF55 /* SVGLine.swift */,
+				EB62E00CE302ECCB7EC9F2DB08BF26DA /* SVGParser.swift */,
+				CC05B08A3D71CAC5BA1EC2519D8FCFE1 /* SVGParserSupportedElements.swift */,
+				E374FAA61F94F7DCDE749166B07FDA92 /* SVGPath.swift */,
+				0963ABE385121453D4A9428E9F00C9ED /* SVGPolygon.swift */,
+				C41510B99BAA223000E258C0659D78A7 /* SVGPolyline.swift */,
+				998A032C53E5AE50D891A09EF89C0533 /* SVGRectangle.swift */,
+				B32694346ADDB20B447AD3F090504FCD /* SVGRootElement.swift */,
+				C1087CB9AE921CC3D38DDE8CFA800810 /* SVGShapeElement.swift */,
+				299C7670236D80F5EB36FB15416E8569 /* SVGView.swift */,
+				14B7706408443B741F718112A512A945 /* Transformable.swift */,
+				74967BAAB7733190D752C26F7C5C09F4 /* UIBezierPath+SVG.swift */,
+				5782969B5B504684F3F2E786C2096210 /* UIColor+Extensions.swift */,
+				64A91A384182AB71B6C2A006D5EC3553 /* UIView+SVG.swift */,
+				FE41E418C52FCB1C30A12A2E17D351DB /* Unown.swift */,
+				B088C0BC092829C050D562A0A7D42C57 /* Support Files */,
+			);
+			name = SwiftSVG;
+			path = SwiftSVG;
+			sourceTree = "<group>";
+		};
+		B088C0BC092829C050D562A0A7D42C57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C210697CEDA06CC01239D0BD0F8AAC0 /* SwiftSVG.modulemap */,
+				4541A7D5C3398672230FC285596001C2 /* SwiftSVG.xcconfig */,
+				14BCC411EB45DC180B1AFFBEE10823B9 /* SwiftSVG-dummy.m */,
+				716FDCC7458C9553F7B83E00BEC296D0 /* SwiftSVG-Info.plist */,
+				A8E833DAC9500CA98BE280F591874FB3 /* SwiftSVG-prefix.pch */,
+				7FF3A4BBD95FA56AD4B1EEC1DC3E90ED /* SwiftSVG-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSVG";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F9229C4D1571DDC127B38AEEEDA18DDA /* Pods */,
+				40A1F8F88DFBD50F16A74B7FF571C552 /* Products */,
+				552EDC54E0CD671CE09EBE8E2A8D10F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9229C4D1571DDC127B38AEEEDA18DDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74337EEE5094C9C2EBCCEBC8FBA7C333 /* SwiftSVG */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A752F7961E4C1D9921A151EA1667C06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F921920FB175513318B46694CDD1FD8 /* Pods-Countries-Challenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4DD1EEF30B91880ED9B2FA2627F65B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B1981D77B2DC0B50356EAC116CFF94 /* SwiftSVG-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F7BE4A8DE1937E07AAD2170A2AB250C /* Pods-Countries-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006BC5C7DC8C3DB38712B9C0BD956DCD /* Build configuration list for PBXNativeTarget "Pods-Countries-Challenge" */;
+			buildPhases = (
+				5A752F7961E4C1D9921A151EA1667C06 /* Headers */,
+				88DDDA4500288AE49DE163A943F10B89 /* Sources */,
+				398646DBC8333B9C5A1F18AB61836A40 /* Frameworks */,
+				B05B68200EECE1C1007A81DAFF5E2B33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23284D99DFCB6892252165CE55989A87 /* PBXTargetDependency */,
+			);
+			name = "Pods-Countries-Challenge";
+			productName = "Pods-Countries-Challenge";
+			productReference = 5F277B583E6CE26CFC4B16417029FB27 /* Pods_Countries_Challenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2349E173F60A2065FC65E52DD215DFF0 /* SwiftSVG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B1BB43380EE85CDACA2C43CA9E42C9 /* Build configuration list for PBXNativeTarget "SwiftSVG" */;
+			buildPhases = (
+				EC4DD1EEF30B91880ED9B2FA2627F65B /* Headers */,
+				0DE7B9B14506D5B06290138DAF8B271C /* Sources */,
+				CCC95CF555D919E7927C0676C16D6EC6 /* Frameworks */,
+				FA53A2D6D78D40639E11B98C9ED8BD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSVG;
+			productName = SwiftSVG;
+			productReference = 62DF1BDA41B723D7B0440FD765F1C141 /* SwiftSVG.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 40A1F8F88DFBD50F16A74B7FF571C552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7BE4A8DE1937E07AAD2170A2AB250C /* Pods-Countries-Challenge */,
+				2349E173F60A2065FC65E52DD215DFF0 /* SwiftSVG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B05B68200EECE1C1007A81DAFF5E2B33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA53A2D6D78D40639E11B98C9ED8BD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DE7B9B14506D5B06290138DAF8B271C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC78D21F69A5B1670EA837C0A5F6390D /* BinaryFloatingPoint+ParseLengthString.swift in Sources */,
+				34FB97622838BAF70DF4F754183CE03E /* CALayer+Sublayers.swift in Sources */,
+				A2B9ED2191B47DE2B3D5F357B14D838F /* CALayer+SVG.swift in Sources */,
+				3DA15AAAD6381241F577F86F3E42F36C /* CAShapeLayer+SVG.swift in Sources */,
+				7743B437A7C29FE6821E3A4C9FA45577 /* CoordinateLexer.swift in Sources */,
+				B3A384A0CD6468AE2808DB582F3EAC2E /* CrossPlatform.swift in Sources */,
+				DFBADB5CC4932142422002F20F5A8AAA /* Data+CacheKey.swift in Sources */,
+				712DD65FE85BCC1B3485EE683FFB6C98 /* DelaysApplyingAttributes.swift in Sources */,
+				FF274B739B932D5475DCBE355567F21E /* Dictionary+Add.swift in Sources */,
+				BB6CDBCD56FE7AD6B053C4A572B79F39 /* Dictionary+JSON.swift in Sources */,
+				F05946185B7A37653C0BA3149687EDB3 /* DispatchQueue+Extensions.swift in Sources */,
+				137B0B5E63202FE2E9FAD9C3FAA2ADA6 /* Fillable.swift in Sources */,
+				1BA68E00C3BA704B0ED72BAF9CD1CFE1 /* FloatingPoint+DegreesRadians.swift in Sources */,
+				63DC9E0B2F3C2FA86FF7B77E51779A8C /* Identifiable.swift in Sources */,
+				95FCA1C4E626F70924D111DA2609D2D1 /* NSBezierPath+CrossPlatform.swift in Sources */,
+				A3FE64F1CDE83839169A8497E2BBA303 /* NSXMLSVGParser.swift in Sources */,
+				1F5FAACE87B623C44153DD09A822E1B3 /* ParsesAsynchronously.swift in Sources */,
+				290FDD6000DBBC635016326F9711F111 /* PathCommand.swift in Sources */,
+				1AC00B5C1555BDC7A5B0690BBE29769E /* PathDLexer.swift in Sources */,
+				EAEC62731E421E8C8BE928032193B9EB /* Print.swift in Sources */,
+				9A0E47682B59A3B119C23F4EFA6E271F /* Scalar+FromByteArray.swift in Sources */,
+				A9E8F15FD1CF5ED960B637D688A63DDA /* Stack.swift in Sources */,
+				BD5AEAE5C754E31177ACF6CE6BF56E96 /* String+Subscript.swift in Sources */,
+				20E0BE472F06CDD82AA660C4C0B190E3 /* String+Trim.swift in Sources */,
+				F0C0274D3FB9D20A4232B5BE8DAE532F /* Strokable.swift in Sources */,
+				99EF0E3EC03BCFC297DF399105502FDB /* Stylable.swift in Sources */,
+				2B51BABACCA8BB003BF832C7199ACB3C /* SVGCache.swift in Sources */,
+				9A9D956F06ED090E30A48ACF6A8E65C4 /* SVGCircle.swift in Sources */,
+				AC07823B941A20C4922DE7C88F3570DE /* SVGContainerElement.swift in Sources */,
+				0579DB182A9DF9334D6F85BFFE5E2C7B /* SVGElement.swift in Sources */,
+				BD61DD79F86B26BD7DCC9A19C151476F /* SVGEllipse.swift in Sources */,
+				399FADF0A86557CDFB3B8CA527BCD0F0 /* SVGGroup.swift in Sources */,
+				6D23C152B6445C4508F6FF8FB352F4DC /* SVGLayer.swift in Sources */,
+				D3B55EC0016ABBC02EB9376CFAFC7B41 /* SVGLine.swift in Sources */,
+				2B3221296319AB33BFB4C756AE5F4D72 /* SVGParser.swift in Sources */,
+				A6577E273761F4946B31D6FF92D78A40 /* SVGParserSupportedElements.swift in Sources */,
+				CA117284A892BF33550EC5C9563CB41B /* SVGPath.swift in Sources */,
+				4C075371146A8E2EBBCD691A7B639B07 /* SVGPolygon.swift in Sources */,
+				3736DEB3E4538D9F8FA950AD17AA80A1 /* SVGPolyline.swift in Sources */,
+				06AF08EE94A52FBEC4B23FC8F7E46B50 /* SVGRectangle.swift in Sources */,
+				0829D39A7891D0CD419F5B0FA945D78B /* SVGRootElement.swift in Sources */,
+				9D967308ACAC7A1083969A17DA370F66 /* SVGShapeElement.swift in Sources */,
+				9707A3D6C72179DF7BE18A4EE3C88F4E /* SVGView.swift in Sources */,
+				6E636388E18A816493343C46C98E5057 /* SwiftSVG-dummy.m in Sources */,
+				CABAA0C201E696E00A454362AB27F4CD /* Transformable.swift in Sources */,
+				04DBFC7384A95DBD195D6ED3F848E3E1 /* UIBezierPath+SVG.swift in Sources */,
+				2030DCBC8447E22A3EB4F310B2D8B078 /* UIColor+Extensions.swift in Sources */,
+				35DF6382CADD2A0BE2BA216DC3AC709C /* UIView+SVG.swift in Sources */,
+				37C6321FB48624A55C2750261039A1E6 /* Unown.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DDDA4500288AE49DE163A943F10B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CA2FFDDF823AB07EFA74F2504040 /* Pods-Countries-Challenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23284D99DFCB6892252165CE55989A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSVG;
+			target = 2349E173F60A2065FC65E52DD215DFF0 /* SwiftSVG */;
+			targetProxy = 8C4A4B194873D7CC78595BA8704EBD1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10B8681157413A5B55B2AD200D4E7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B424E4CCFA11BC7688115446B9AE5D1 /* Pods-Countries-Challenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Countries-Challenge/Pods-Countries-Challenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Countries-Challenge/Pods-Countries-Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C45B1006817A15455775A7DA55845C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4541A7D5C3398672230FC285596001C2 /* SwiftSVG.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSVG/SwiftSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSVG/SwiftSVG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSVG/SwiftSVG.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSVG;
+				PRODUCT_NAME = SwiftSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EF66DDEB276699986280E4ABC3D69F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4541A7D5C3398672230FC285596001C2 /* SwiftSVG.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSVG/SwiftSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSVG/SwiftSVG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSVG/SwiftSVG.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSVG;
+				PRODUCT_NAME = SwiftSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BB1004D666F0E33F770380D17EDAF6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943B772C9FBE43C6B746A68D762D0920 /* Pods-Countries-Challenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Countries-Challenge/Pods-Countries-Challenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Countries-Challenge/Pods-Countries-Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		006BC5C7DC8C3DB38712B9C0BD956DCD /* Build configuration list for PBXNativeTarget "Pods-Countries-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B8681157413A5B55B2AD200D4E7521 /* Debug */,
+				BB1004D666F0E33F770380D17EDAF6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B1BB43380EE85CDACA2C43CA9E42C9 /* Build configuration list for PBXNativeTarget "SwiftSVG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF66DDEB276699986280E4ABC3D69F1 /* Debug */,
+				6C45B1006817A15455775A7DA55845C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
