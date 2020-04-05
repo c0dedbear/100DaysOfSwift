@@ -1,2 +1,4 @@
 # 100DaysOfSwift
-https://www.hackingwithswift.com/100
+
+All my stuff from the classic 100 days of swift.
+
